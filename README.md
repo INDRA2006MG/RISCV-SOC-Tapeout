@@ -2,7 +2,7 @@
 Open-source RISC-V System-on-Chip (SoC) design targeting tapeout, including RTL, verification, synthesis, and physical design flows. 
 
 ## Program Description
-This Program focuses on the RISC-V SoC Chip tapeout program organized by VLSI System Design (VSD) &IIT Gandhinagar (IITGN). This 20‑week Program will demonstrate a complete tapeout cycle for a RISC‑V Reference SoC using Synopsys tools and the SCL180 nm PDK. This Program is part of India’s Semiconductor Mission, aiming to create skilled VLSI designers and emphasize fabrication at National foundries (SCL). This Program will create the next wave of innovation in VLSI.(https://www.vlsisystemdesign.com/soc-labs/)
+This initiative spotlights the RISC-V SoC chip tapeout program, jointly organized by VLSI System Design (VSD) and IIT Gandhinagar (IITGN). Spanning 20 weeks, the program provides practical exposure to a full tapeout cycle for a RISC‑V Reference SoC, making use of Synopsys tools and the SCL180 nm PDK. As part of India’s Semiconductor Mission, the program is dedicated to developing skilled VLSI engineers with a focus on real-world fabrication at national foundries (SCL). By fostering technical expertise, this effort is set to drive the next era of innovation in the country’s VLSI ecosystem(https://www.vlsisystemdesign.com/soc-labs/)
 
 ## Key Highlights:
 + Functional Validation
