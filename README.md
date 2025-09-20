@@ -14,3 +14,19 @@ This initiative spotlights the RISC-V SoC chip tapeout program, jointly organize
 + Post-Silicon Validation
 ## Outcomes
 1. Able to design a complete RISC-V based SoC and Tapeout the same.
+
+# WEEK 0 
+
+## Environment + RTL sim basics
+
+**Task 1: Create GitHub repo** 
++(https://github.com/INDRA2006MG/RISCV-SOC-Tapeout/edit/main/README.md)
+  
+**Task 2: Tool Installation**
+  ## Tools installation instructions
+ + Oracle virtual machine link : https://www.virtualbox.org/wiki/Downloads
+   
+**System Check**
++ 6GB RAM, 50 GB HDD
++ Ubuntu 20.04+
++ 4vCPU 
