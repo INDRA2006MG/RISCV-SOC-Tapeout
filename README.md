@@ -30,7 +30,7 @@ This initiative spotlights the RISC-V SoC chip tapeout program, jointly organize
 + 6GB RAM, 50 GB HDD
 + Ubuntu 20.04+
 + 4vCPU 
-
+![system info](https://github.com/INDRA2006MG/RISCV-SOC-Tapeout/blob/main/Pictures/IMG_20250920_233832.jpg)
 **Yosys**
 ```
 $ sudo apt-get update
