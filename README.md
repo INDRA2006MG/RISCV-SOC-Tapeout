@@ -47,7 +47,7 @@ $ git submodule update --init --recursive
 $ make 
 $ sudo make install
 ```
-
+![yosys](https://github.com/INDRA2006MG/RISCV-SOC-Tapeout/blob/main/Pictures/IMG_20250920_233711.jpg)
 **iVerilog**
 ```
 $ sudo apt-get update
