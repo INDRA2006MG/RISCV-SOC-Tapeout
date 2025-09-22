@@ -53,6 +53,7 @@ $ sudo make install
 $ sudo apt-get update
 $ sudo apt install gtkwave
 ```
+![iverilog](https://github.com/INDRA2006MG/RISCV-SOC-Tapeout/blob/main/Pictures/IMG_20250920_233744.jpg)
 **GTKWAVE**
 ```
 $ sudo apt-get update
