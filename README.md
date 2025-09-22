@@ -59,3 +59,4 @@ $ sudo apt install gtkwave
 $ sudo apt-get update
 $ sudo apt install gtkwave
 ```
+![gtkwave](https://github.com/INDRA2006MG/RISCV-SOC-Tapeout/blob/main/Pictures/IMG_20250920_233814.jpg)
