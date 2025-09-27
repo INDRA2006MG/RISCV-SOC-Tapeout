@@ -18,6 +18,7 @@ The vcd file is the stimulator's output.
 - It is setup to apply stimulus to the design to check its functionality.
 - Test Bench doesn't have a Primary input or outputs.
 - Note, only the design has its Primary input or outputs.
+   <img width="1637" height="773" alt="Screenshot 2025-09-23 112012" src="https://github.com/user-attachments/assets/2760af3b-d030-48c1-ba2b-aa7d6d72f9e7" />
 
 ### GTKWave
 - It is used for viewing the waveform.
