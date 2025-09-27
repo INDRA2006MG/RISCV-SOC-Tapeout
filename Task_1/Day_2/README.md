@@ -84,7 +84,7 @@ write_verilog multiple_modules_hier.v
 write_verilog -noattr multiple_modules_hier.v 
 ````
 
-![hier](https://github.com/DHANASRI-A/RISC-V-Chip-Tapeout/blob/57c5946156859e6f9861df0e7054104bfd237163/Week_1/Day_2/Pictures/Hier.png)
+<img width="1443" height="740" alt="image" src="https://github.com/user-attachments/assets/8dc296a1-bf2e-4519-9396-a7a000a1aa7e" />
 
 ---
 
@@ -111,7 +111,8 @@ write_verilog multiple_modules_flat.v
 write_verilog -noattr multiple_modules_flat.v
 ```
 
-![flatten](https://github.com/DHANASRI-A/RISC-V-Chip-Tapeout/blob/57c5946156859e6f9861df0e7054104bfd237163/Week_1/Day_2/Pictures/Flatten.png)
+<img width="1444" height="641" alt="image" src="https://github.com/user-attachments/assets/d48675b1-ec24-4a93-a360-779985fc69eb" />
+
 
 ---
 
@@ -235,4 +236,25 @@ The **same synthesis flow** applies to:
 **Only the Verilog module name changes**; commands and flow remain the same.
 
 ---
+## Summary
 
+- **Timing Libraries:**  
+  - `.lib` files (e.g., `sky130_fd_sc_hd__tt_025C_1v80.lib`) define standard cell timing and characteristics used for accurate synthesis and timing analysis.
+
+- **Synthesis Approaches:**  
+  - **Hierarchical Synthesis:** Synthesizes sub-modules individually; allows better optimization and area control.  
+  - **Flat Synthesis:** Synthesizes the entire design at once; simpler but may miss local optimization opportunities.  
+  - Flattening can be done post-hierarchical synthesis if needed.
+
+- **Efficient Flip-Flop Coding Styles:**  
+  - **Asynchronous Reset/Set:**
+    - Immediate response
+    - Independent of clock
+    - Useful for global initialization.  
+  - **Synchronous Reset/Set:**
+    - Changes occur only on clock edge
+    - Ensures predictable timing and avoids hazards.  
+
+- **Simulation & Synthesis Workflow:**  
+  - **Simulation:** `iverilog` → `vvp` → `GTKWave`.  
+  - **Synthesis (Yosys):** Load library → read Verilog → `synth` → `dfflibmap` → `abc` → `show`.
