@@ -62,7 +62,7 @@ gtkwave tb_good_mux.vcd
 ```
 **Waveform**
 
-<img width="1295" height="821" alt="Screenshot 2025-09-24 175715" src="https://github.com/user-attachments/assets/8e158661-c12a-4f45-9de2-57aed5e4f9eb" />
+<img width="1278" height="771" alt="image" src="https://github.com/user-attachments/assets/7fe4fb59-2de3-4575-afa9-a7d3db7c8fbb" />
 
 
 To install gvim:
@@ -112,7 +112,7 @@ endmodule
  - Verification of the netlist file can be done by generating gtkwave for netlist file.
  - The same TB can be used in verification process.
 <img width="1202" height="335" alt="image" src="https://github.com/user-attachments/assets/474e9689-f92b-4234-8a79-444eef05c397" />
-<img width="1280" height="880" alt="Screenshot 2025-09-24 180047" src="https://github.com/user-attachments/assets/5c37e571-8988-4a50-8433-815a3e54d7bb" />
+<img width="513" height="111" alt="image" src="https://github.com/user-attachments/assets/472ba3fe-c888-45b1-92f5-dff4bcc26841" />
 
 
 ### What is .lib
@@ -166,8 +166,7 @@ stat
 ---
 ### **Synthesis Outputs:**
 #### Netlist Dot File:
-<img width="1295" height="817" alt="Screenshot 2025-09-24 182130" src="https://github.com/user-attachments/assets/ae220505-69b3-40d2-be34-c83a77d754a1" />
-
+<img width="1718" height="801" alt="image" src="https://github.com/user-attachments/assets/dcd2acba-bccd-4a84-ba1d-1bb065bd8407" />
 
 #### Statistics:
 
