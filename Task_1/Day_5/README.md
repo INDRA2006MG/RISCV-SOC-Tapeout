@@ -128,120 +128,65 @@ endmodule
 
 ### Lab 1: Incomplete If Statement
 
-```verilog
-module incomp_if (input i0, input i1, input i2, output reg y);
-always @(*) begin
-    if (i0)
-        y <= i1;
-end
-endmodule
-```
-![in_comp_if](https://github.com/user-attachments/assets/91d1cc1d-bb3a-4ea8-a272-363414777868)
+The incomplete if verilog code is 
+
+<img width="1019" height="290" alt="image" src="https://github.com/user-attachments/assets/ec35dd5c-28e7-45f5-a924-21b1d34d567f" />
+
+The gtkwave is:
+
+<img width="1239" height="789" alt="image" src="https://github.com/user-attachments/assets/b4d9b9f8-3943-4c1b-9a71-4dd889187473" />
+
+The Netlist Dot File:
+
+<img width="1012" height="602" alt="image" src="https://github.com/user-attachments/assets/232c7a0b-1121-4469-ace9-2511f45ac6ae" />
 
 ---
 
-### Lab 2: Synthesis Result of Lab 1
+### Lab 2: Nested If-Else
+The incomplete nested if-else verilog code is
 
-![incomp_synth](https://github.com/user-attachments/assets/691045e7-39e0-4e6c-98bd-511b501fbe35)
+<img width="894" height="493" alt="image" src="https://github.com/user-attachments/assets/2b31560f-b129-40eb-9e90-b164b2cfb5c4" />
 
----
+gtkwave is:
 
-### Lab 3: Nested If-Else
+<img width="1249" height="785" alt="image" src="https://github.com/user-attachments/assets/64ded2d1-dd4c-43b3-8997-47397224cfa8" />
 
-```verilog
-module incomp_if2 (input i0, input i1, input i2, input i3, output reg y);
-always @(*) begin
-    if (i0)
-        y <= i1;
-    else if (i2)
-        y <= i3;
-end
-endmodule
-```
-![icomp2](https://github.com/user-attachments/assets/2f614956-e4af-4d29-80ae-13a167e7831d)
+Netlist Dot File is:
+
+<img width="928" height="498" alt="image" src="https://github.com/user-attachments/assets/4fdf2a6f-bb96-4cc9-a7c3-beba9893976b" />
 
 ---
 
-### Lab 4: Synthesis Result of Lab 3
 
-![incomp2synth](https://github.com/user-attachments/assets/880ff7bb-23fb-4362-bf8f-a2494a854b53)
+### Lab 3: Complete Case Statement
+The complete case statement verilog code of comp_case is
 
----
+<img width="880" height="454" alt="image" src="https://github.com/user-attachments/assets/cbe2c620-fe9c-4a24-bf77-7f08ec5ee6c6" />
 
-### Lab 5: Complete Case Statement
+gtkwave is:
 
-```verilog
-module comp_case (input i0, input i1, input i2, input [1:0] sel, output reg y);
-always @(*) begin
-    case(sel)
-        2'b00 : y = i0;
-        2'b01 : y = i1;
-        default : y = i2;
-    endcase
-end
-endmodule
-```
-![compcase](https://github.com/user-attachments/assets/cfe97c45-a487-4f06-b4a2-74b3a61bee14)
+<img width="1245" height="785" alt="image" src="https://github.com/user-attachments/assets/303a58e0-4840-42a1-881d-7c4cbe89c2ec" />
 
----
+Netlist Dot File is:
 
-### Lab 6: Synthesis Result of Lab 5
+<img width="1111" height="588" alt="image" src="https://github.com/user-attachments/assets/126786be-c44d-4c56-8612-4baac15e24a5" />
 
-![compcase_synth](https://github.com/user-attachments/assets/8c871511-6e55-4e80-be11-86e9efd87cad)
 
----
+### Lab 4: Incomplete Case Handling
 
-### Lab 7: Incomplete Case Handling
+The bad_case verilog code is
 
-```verilog
-module bad_case (
-    input i0, input i1, input i2, input i3,
-    input [1:0] sel,
-    output reg y
-);
-always @(*) begin
-    case(sel)
-        2'b00: y = i0;
-        2'b01: y = i1;
-        2'b10: y = i2;
-        2'b1?: y = i3; // '?' is a wildcard; be careful with incomplete cases!
-    endcase
-end
-endmodule
-```
-![badcase](https://github.com/user-attachments/assets/4ccf37aa-5502-4750-bedb-9b2ec0748a53)
+<img width="889" height="379" alt="image" src="https://github.com/user-attachments/assets/829f0699-ac8b-42fe-8344-a1f97e95462c" />
+
+gtkwave is:
+
+<img width="1268" height="669" alt="image" src="https://github.com/user-attachments/assets/681fecdf-4552-42a0-a158-98966dfe1eed" />
+
+Netlist Dot File is:
+
+<img width="917" height="689" alt="image" src="https://github.com/user-attachments/assets/15200838-1a30-4600-ac5d-dcfe8a467b7a" />
 
 ---
-
-### Lab 8: Partial Assignments in Case
-
-```verilog
-module partial_case_assign (
-    input i0, input i1, input i2,
-    input [1:0] sel,
-    output reg y, output reg x
-);
-always @(*) begin
-    case(sel)
-        2'b00: begin
-            y = i0;
-            x = i2;
-        end
-        2'b01: y = i1;
-        default: begin
-            x = i1;
-            y = i2;
-        end
-    endcase
-end
-endmodule
-```
-![Screenshot_2025-05-28_12-39-30](https://github.com/user-attachments/assets/3f6068f3-726d-4192-b3cd-f88b3611e752)
-
-> **Note:** Steps to perform the above labs are shown in [Day 1](https://github.com/Ahtesham18112011/RTL_workshop/tree/main/Day_1).
-
----
-
 ## 4. For Loops in Verilog
 
 A **for loop** is used within procedural blocks (`initial`, `always`, tasks/functions) to execute statements multiple times based on a loop counter.
@@ -299,7 +244,7 @@ endgenerate
 
 An RCA adds binary numbers using a chain of full adders. To add `n` bits, you need `n` full adders. Each carry-out connects to the carry-in of the next stage.
 
-![image](https://github.com/user-attachments/assets/f1ec27d4-b770-4d7a-a418-6435fc81f538)
+<img width="971" height="408" alt="image" src="https://github.com/user-attachments/assets/78b61798-de6a-4434-a446-7fd8014fbf83" />
 
 ---
 
@@ -324,7 +269,7 @@ always @(*) begin
 end
 endmodule
 ```
-![mux_generate](https://github.com/user-attachments/assets/80789638-c349-44a9-92f4-7597d5925c63)
+<img width="1832" height="902" alt="image" src="https://github.com/user-attachments/assets/c7d72bdb-bb67-4c8d-9ca9-0783efaaa90b" />
 
 ---
 
@@ -354,7 +299,7 @@ always @(*) begin
 end
 endmodule
 ```
-![demux-case](https://github.com/user-attachments/assets/1836a255-e260-47de-9a8e-45899b19fc03)
+<img width="1829" height="900" alt="image" src="https://github.com/user-attachments/assets/f846b157-238b-4b82-a4a5-b994e487499f" />
 
 ---
 
@@ -379,7 +324,7 @@ always @(*) begin
 end
 endmodule
 ```
-![demux-generate](https://github.com/user-attachments/assets/a5a2c004-a16f-44cd-8d80-c23f1c932e6c)
+<img width="1832" height="897" alt="image" src="https://github.com/user-attachments/assets/d1c0c926-617a-449c-a338-99261576d8fb" />
 
 ---
 
@@ -413,11 +358,9 @@ module fa (input a, input b, input c, output co, output sum);
     assign {co, sum} = a + b + c;
 endmodule
 ```
-![rca_org](https://github.com/user-attachments/assets/1d8876f9-e303-4a73-945e-97756a37bb73)
+<img width="1264" height="620" alt="image" src="https://github.com/user-attachments/assets/ef8be5c5-1c4d-4f7a-964a-8c1bc52bbc4a" />
 
 ---
-
-> **Note:** Steps to perform the above labs are already shown in Day 1.
 
 ---
 
@@ -429,4 +372,3 @@ endmodule
 - Use labs to reinforce concepts with practical Verilog code and synthesis results.
 
 ---
-
